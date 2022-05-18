@@ -1,6 +1,6 @@
 import { Component } from 'react'
-import CardList from '../../../components/card-list/card-list.component';
-import SearchBox from '../../../components/search-box/search-box.component';
+import CardList from '../../../components/monsters-rolodex/card-list/card-list.component';
+import SearchBox from '../../../components/monsters-rolodex/search-box/search-box.component';
 
 import './monsters-rolodex.styles.scss'
 
