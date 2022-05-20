@@ -8,8 +8,8 @@ const Navbar = (props) => {
         <nav className='navbar'>
             <ul className='navbar-nav' >{ props.children }</ul>        
         </nav>
-    )
-}
+    );
+};
 
 const NavItem = (props) => {
 

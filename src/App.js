@@ -4,14 +4,16 @@ import Home from './routes/index/home.component';
 import Projects from './routes/projects/projects.component';
 import Monsters from './routes/projects/monsters-rolodex/monsters-rolodex.component';
 import Shop from './routes/projects/shop/shop.component';
-import Navigation from './components/navigation/navigation.component';
+// import Navigation from './routes/navigation/navigation.component';
+
+import Navbar from './routes/navigation/navbar/navbar.component';
 
 import './App.scss';
 
 const App = () => {
   return (
     <Routes>
-      <Route path='/' element={<Navigation />}>
+      <Route path='/' element={<Navbar />}>
         <Route index element={<Home />} />
         <Route path='projects' element={<Projects />} />
         <Route path='projects/monsters-rolodex' element={<Monsters />} />

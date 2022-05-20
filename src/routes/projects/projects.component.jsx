@@ -1,7 +1,11 @@
 
 const Projects = () => {
     return (
-        <section className='monsters-rolodex' >
+        <div className='projects-container'>
+            <section className="projects-navbar-container">
+
+            </section>
+            <section className='monsters-rolodex' >
             <h2>Monsters Rolodex</h2>
             <p>
                 Monsters Rolodex is a project that uses JSON data to fill in the 
@@ -23,6 +27,7 @@ const Projects = () => {
                 <li>JSON Data: https://jsonplaceholder.typicode.com/users</li>
             </ul>
         </section>
+        </div>
     )
 }
 
