@@ -1,4 +1,4 @@
-import Directory from '../../../components/shop/directory/directory.component';
+import Directory from '../../../components/shop/shop-directory/shop-directory.component';
 
 const Shop = () => {
     
@@ -31,7 +31,9 @@ const Shop = () => {
       ]
 
     return (
-        <Directory categories={categories} />
+        <div>
+            <Directory categories={categories} />
+        </div>
     );
 };
 
