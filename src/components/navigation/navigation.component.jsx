@@ -1,4 +1,5 @@
-import { Outlet, Link} from 'react-router-dom'
+import React from 'react';
+import { Outlet} from 'react-router-dom'
 
 import './navigation.styles.scss'
 
@@ -11,9 +12,14 @@ const Navbar = (props) => {
 }
 
 const NavItem = (props) => {
+
     return (
         <li className='nav-item'>
-            <a href='/' className='icon-button'>{ props.icon }</a>
+            <a 
+                href={ props.href } 
+                className='icon-button'>
+                { props.icon }
+            </a>
         </li>
     );
 };
@@ -23,9 +29,14 @@ const Navigation = () => {
     return (
         <div className='navbar-container' >
             <Navbar>
-                <NavItem icon='😀'/>
-                <NavItem icon='😀'/>
-                <NavItem icon='😀'/>
+                <NavItem 
+                    icon='Index'
+                    href='/'
+                />
+                <NavItem 
+                    icon='Projects'
+                    href='projects'
+                />
             </Navbar>
             <Outlet />
         </div>
