@@ -1,7 +1,7 @@
 import React from 'react';
-import { Outlet} from 'react-router-dom'
+// import { Outlet} from 'react-router-dom'
 
-import './navigation.styles.scss'
+import './shop-navigation.styles.scss'
 
 const Navbar = (props) => {
     return (
@@ -24,23 +24,19 @@ const NavItem = (props) => {
     );
 };
 
-const Navigation = () => {
+const ShopNavigation = () => {
 
     return (
         <div className='navbar-container' >
             <Navbar>
                 <NavItem 
                     icon='Index'
-                    href='/'
-                />
-                <NavItem 
-                    icon='Projects'
-                    href='projects'
+                    href='shop'
                 />
             </Navbar>
-            <Outlet />
+            {/* <Outlet /> */}
         </div>
     );
 };
   
-  export default Navigation;
+  export default ShopNavigation;

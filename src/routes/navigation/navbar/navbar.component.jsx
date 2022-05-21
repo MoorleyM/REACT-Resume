@@ -54,10 +54,21 @@ const Navbar = () => {
                         {dropdown && <Dropdown />}
                     </li>
                     <li className='nav-item'>
-                        <Link to='projects/shop/sign-up' className='nav-links' id='sign-up-item' onClick={closeMobileMenu}>
-                            Sign Up
+                        <Link to='projects/monsters-rolodex' className='nav-links' id='sign-up-item' onClick={closeMobileMenu}>
+                            Monsters Rolodex
                         </Link>
                     </li>
+                    <li className='nav-item'>
+                        <Link to='projects/shop' className='nav-links' id='sign-up-item' onClick={closeMobileMenu}>
+                            Shop
+                        </Link>
+                    </li>
+                    <li className='nav-item'>
+                        <Link to='projects/shop/sign-up' className='nav-links' id='sign-up-item' onClick={closeMobileMenu}>
+                            Sign In
+                        </Link>
+                    </li>
+                    
                 </ul>
                 <Button />
             </nav>  

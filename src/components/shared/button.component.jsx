@@ -6,7 +6,7 @@ import './button.styles.scss'
 const Button = () => {
     return (
         <Link to='projects/shop/sign-up'>
-            <button className='btn' >Sign Up</button>
+            <button className='btn' >Sign In</button>
         </Link>
     );
 };

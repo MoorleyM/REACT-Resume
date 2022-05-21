@@ -11,6 +11,13 @@
         font-size: 75px;
         color: #0ccac4;
         font-family: 'Bigelow Rules', cursive;
+        margin-top: 0px;
+    }
+
+    .card-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
 }

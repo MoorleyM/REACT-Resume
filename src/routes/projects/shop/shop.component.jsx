@@ -1,4 +1,5 @@
 import Directory from '../../../components/shop/shop-directory/shop-directory.component';
+import ShopNavigation from '../../navigation/shop-navbar/shop-navigation.component';
 
 const Shop = () => {
     
@@ -32,7 +33,12 @@ const Shop = () => {
 
     return (
         <div>
-            <Directory categories={categories} />
+            <navbar className='shop-navbar'>
+                <ShopNavigation />
+            </navbar>
+            <section>
+                <Directory categories={categories} />
+            </section>     
         </div>
     );
 };
