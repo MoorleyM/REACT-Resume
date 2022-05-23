@@ -64,14 +64,14 @@ const Navbar = () => {
                         </Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to='projects/shop/sign-up' className='nav-links' id='sign-up-item' onClick={closeMobileMenu}>
+                        <Link to='projects/shop/auth' className='nav-links' id='sign-up-item' onClick={closeMobileMenu}>
                             Sign In
                         </Link>
                     </li>
                     
                 </ul>
                 <Button
-                    href='projects/shop/sign-up'
+                    href='projects/shop/auth'
                     title='Sign In'
                 />
             </nav>  
