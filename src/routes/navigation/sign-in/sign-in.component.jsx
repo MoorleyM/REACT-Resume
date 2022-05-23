@@ -4,6 +4,8 @@ import {
     createUserDocumentFromAuth,
 } from "../../../utils/firebase/firebase.utils";
 
+import SignUpForm from "../../../components/shop/sign-up-form/sign-up-form.component";
+
 import './sign-in.styles.scss'
 
 const SignIn = () => {
@@ -22,7 +24,12 @@ const SignIn = () => {
                 <ShopNavigation />
             </nav>
             <section>
-                <button onClick={logGoogleUser} >Sign in With Google</button>
+                <div>
+                    <button onClick={logGoogleUser} >Sign in With Google</button>
+                </div>
+                <div>
+                    <SignUpForm />
+                </div>
             </section>     
         </div>
     );

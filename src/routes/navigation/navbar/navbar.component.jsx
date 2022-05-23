@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Outlet, Link } from 'react-router-dom'
 
-import Button from '../../../components/shared/button.component';
+import Button from '../../../components/shared/buttons/generic-button/button.component';
 import Dropdown from './dropdown.component';
 
 import './navbar.styles.scss'
@@ -70,7 +70,7 @@ const Navbar = () => {
                     </li>
                     
                 </ul>
-                <Button 
+                <Button
                     href='projects/shop/sign-up'
                     title='Sign In'
                 />
