@@ -1,5 +1,8 @@
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 // import { Outlet} from 'react-router-dom'
+
+import Shop from '../../projects/shop/shop.component';
 
 import './shop-navigation.styles.scss'
 

@@ -1,15 +1,28 @@
 import ShopNavigation from "../shop-navbar/shop-navigation.component";
+import { 
+    signInWithGooglePopup,
+    createUserDocumentFromAuth,
+} from "../../../utils/firebase/firebase.utils";
 
 import './sign-in.styles.scss'
 
 const SignIn = () => {
+
+    // Making async call to database
+    const logGoogleUser = async () => {
+
+        // Waiting for response
+        const { user } = await signInWithGooglePopup();
+        createUserDocumentFromAuth(user)
+    };
+
     return (
         <div>
-            <navbar className='shop-navbar' >
+            <nav className='shop-navbar'>
                 <ShopNavigation />
-            </navbar>
+            </nav>
             <section>
-                <h1>Sign In</h1>
+                <button onClick={logGoogleUser} >Sign in With Google</button>
             </section>     
         </div>
     );

@@ -70,7 +70,10 @@ const Navbar = () => {
                     </li>
                     
                 </ul>
-                <Button />
+                <Button 
+                    href='projects/shop/sign-up'
+                    title='Sign In'
+                />
             </nav>  
             <Outlet />
         </div>

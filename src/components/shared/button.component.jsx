@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 
 import './button.styles.scss'
 
-const Button = () => {
+const Button = (props) => {
     return (
-        <Link to='projects/shop/sign-up'>
-            <button className='btn' >Sign In</button>
+        <Link to={props.href}>
+            <button className='btn' >{props.title}</button>
         </Link>
     );
 };
