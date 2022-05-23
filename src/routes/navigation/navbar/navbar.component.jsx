@@ -1,12 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { Outlet, Link } from 'react-router-dom'
 
 import Button from '../../../components/shared/buttons/generic-button/button.component';
 import Dropdown from './dropdown.component';
+import { UserContext } from '../../../components/contexts/user.context';
+import { signOutUser } from '../../../utils/firebase/firebase.utils';
 
 import './navbar.styles.scss'
+import '../../../components/shared/buttons/generic-button/button.styles.scss'
 
 const Navbar = () => {
+
+    const { currentUser } = useContext(UserContext)
+    // console.log(currentUser)
 
     const [click, setClick] = useState(false);
     const [dropdown, setDropdown] = useState(false)
@@ -64,16 +70,26 @@ const Navbar = () => {
                         </Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to='projects/shop/auth' className='nav-links' id='sign-up-item' onClick={closeMobileMenu}>
-                            Sign In
-                        </Link>
+                        {currentUser ? (
+                            <Link to='/' className='nav-links' id='sign-up-item' onClick={signOutUser}>
+                                Sign Out
+                            </Link>
+                        ) : (
+                            <Link to='projects/shop/auth' className='nav-links' id='sign-up-item' onClick={closeMobileMenu}>
+                                Sign In
+                            </Link>
+                        )}
                     </li>
                     
                 </ul>
-                <Button
-                    href='projects/shop/auth'
-                    title='Sign In'
-                />
+                {currentUser ? (
+                    <button className='btn' onClick={signOutUser}>Sign Out</button>
+                ) : (
+                    <Button
+                        href='projects/shop/auth'
+                        title='Sign In'
+                    />
+                )}
             </nav>  
             <Outlet />
         </div>
