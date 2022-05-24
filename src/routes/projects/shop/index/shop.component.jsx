@@ -1,5 +1,5 @@
-import Directory from '../../../components/shop/shop-directory/shop-directory.component';
-import ShopNavigation from '../../navigation/shop-navbar/shop-navigation.component';
+import Directory from '../../../../components/shop/shop-directory/shop-directory.component';
+import ShopNavigation from '../../../navigation/shop-navbar/shop-navbar.component';
 
 const Shop = () => {
     

@@ -44,7 +44,11 @@ const ShopNavigation = () => {
                 />
                 <NavItem 
                     icon='Hats'
-                    href='shop/hats'
+                    href='hats'
+                />
+                <NavItem 
+                    icon='Cart'
+                    href='cart'
                 />
             </Navbar>
             {isCartOpen && <CartDropdown />}
@@ -53,4 +57,4 @@ const ShopNavigation = () => {
     );
 };
   
-  export default ShopNavigation;
+export default ShopNavigation;

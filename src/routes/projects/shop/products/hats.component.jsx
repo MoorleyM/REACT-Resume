@@ -1,8 +1,8 @@
 import { useContext } from 'react';
 
-import { ProductsContext } from '../../../components/contexts/products.context';
-import ProductCard from '../../../components/shop/product-card/product-card.component';
-import ShopNavigation from '../../navigation/shop-navbar/shop-navigation.component';
+import { ProductsContext } from '../../../../components/contexts/products.context';
+import ProductCard from '../../../../components/shop/product-card/product-card.component';
+import ShopNavigation from '../../../navigation/shop-navbar/shop-navbar.component';
 
 import './hats.styles.scss'
 

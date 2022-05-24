@@ -1,4 +1,4 @@
-import ShopNavigation from "../shop-navbar/shop-navigation.component";
+import ShopNavigation from "../shop-navbar/shop-navbar.component";
 
 import SignUpForm from "../../../components/shop/sign-up-form/sign-up-form.component";
 import SignInForm from "../../../components/shop/sign-in-form/sign-in-form.component";

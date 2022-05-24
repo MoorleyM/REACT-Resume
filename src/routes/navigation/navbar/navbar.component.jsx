@@ -60,12 +60,12 @@ const Navbar = () => {
                         {dropdown && <Dropdown />}
                     </li>
                     <li className='nav-item'>
-                        <Link to='projects/monsters-rolodex' className='nav-links' id='sign-up-item' onClick={closeMobileMenu}>
+                        <Link to='monsters-rolodex' className='nav-links' id='sign-up-item' onClick={closeMobileMenu}>
                             Monsters Rolodex
                         </Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to='projects/shop' className='nav-links' id='sign-up-item' onClick={closeMobileMenu}>
+                        <Link to='shop' className='nav-links' id='sign-up-item' onClick={closeMobileMenu}>
                             Shop
                         </Link>
                     </li>
@@ -75,7 +75,7 @@ const Navbar = () => {
                                 Sign Out
                             </Link>
                         ) : (
-                            <Link to='projects/shop/auth' className='nav-links' id='sign-up-item' onClick={closeMobileMenu}>
+                            <Link to='auth' className='nav-links' id='sign-up-item' onClick={closeMobileMenu}>
                                 Sign In
                             </Link>
                         )}
@@ -86,7 +86,7 @@ const Navbar = () => {
                     <button className='btn' onClick={signOutUser}>Sign Out</button>
                 ) : (
                     <Button
-                        href='projects/shop/auth'
+                        href='auth'
                         title='Sign In'
                     />
                 )}

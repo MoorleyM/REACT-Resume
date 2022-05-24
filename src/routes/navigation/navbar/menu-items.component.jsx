@@ -6,12 +6,12 @@ export const MenuItems = [
     },
     {
         title: 'Monsters Rolodex',
-        path: 'projects/monsters-rolodex',
+        path: 'monsters-rolodex',
         cName: 'dropdown-link'
     },
     {
         title: 'Shop',
-        path: 'projects/shop',
+        path: 'shop',
         cName: 'dropdown-link'
     }
 ]
