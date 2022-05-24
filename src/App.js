@@ -6,6 +6,7 @@ import Monsters from './routes/projects/monsters-rolodex/monsters-rolodex.compon
 import Shop from './routes/projects/shop/shop.component';
 import Authentication from './routes/navigation/authentication/authentication.component';
 import Navbar from './routes/navigation/navbar/navbar.component';
+import HatsPage from './routes/projects/shop/hats.component';
 
 import './App.scss';
 
@@ -18,6 +19,7 @@ const App = () => {
           <Route path='projects/monsters-rolodex' element={<Monsters />} />
           <Route path='projects/shop' element={<Shop />} />
             <Route path='projects/shop/auth' element={<Authentication />} />
+            <Route path='projects/shop/hats' element={<HatsPage />} />
       </Route>
     </Routes>
   );

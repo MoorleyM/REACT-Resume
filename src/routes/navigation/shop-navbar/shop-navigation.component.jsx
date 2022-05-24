@@ -1,11 +1,16 @@
 import React from 'react';
 
+import CartIcon from '../../../components/shop/cart-icon/cart-icon.component';
+
 import './shop-navigation.styles.scss'
 
 const Navbar = (props) => {
     return (
         <nav className='navbar'>
-            <ul className='navbar-nav' >{ props.children }</ul>        
+            <div>
+                <ul className='navbar-nav' >{ props.children }</ul>
+            </div>
+            <CartIcon />
         </nav>
     );
 };
@@ -31,6 +36,10 @@ const ShopNavigation = () => {
                 <NavItem 
                     icon='Index'
                     href='shop'
+                />
+                <NavItem 
+                    icon='Hats'
+                    href='shop/hats'
                 />
             </Navbar>
             {/* <Outlet /> */}
