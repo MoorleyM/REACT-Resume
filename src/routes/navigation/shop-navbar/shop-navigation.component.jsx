@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
 
 import CartIcon from '../../../components/shop/cart-icon/cart-icon.component';
+import CartDropdown from '../../../components/shop/cart-dropdown/cart-dropdown.component';
+
+import { CartContext } from '../../../components/contexts/cart.context';
 
 import './shop-navigation.styles.scss'
 
@@ -29,6 +32,8 @@ const NavItem = (props) => {
 };
 
 const ShopNavigation = () => {
+    
+    const { isCartOpen } = useContext(CartContext)
 
     return (
         <div className='navbar-container' >
@@ -42,6 +47,7 @@ const ShopNavigation = () => {
                     href='shop/hats'
                 />
             </Navbar>
+            {isCartOpen && <CartDropdown />}
             {/* <Outlet /> */}
         </div>
     );
