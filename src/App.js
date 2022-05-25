@@ -19,7 +19,7 @@ const App = () => {
         <Route path='cart' element={<CartPage />} />
         <Route path='projects' element={<Projects />} />
         <Route path='monsters-rolodex' element={<Monsters />} />
-        <Route path='shop' element={<Shop />} />
+        <Route path='shop/*' element={<Shop />} />
         <Route path='auth' element={<Authentication />} />
         <Route path='hats' element={<HatsPage />} />
       </Route>
