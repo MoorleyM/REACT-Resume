@@ -4,16 +4,14 @@ import { CategoriesContext } from '../../../../components/contexts/categories.co
 import ShopNavigation from '../../../navigation/shop-navbar/shop-navbar.component';
 import ProductCard from '../../../../components/shop/product-card/product-card.component';
 
-import './hats.styles.scss'
-
-const HatsPage = () => {
+const MensPage = () => {
     const { categoriesMap } = useContext(CategoriesContext);
 
     const titles = Object.values(categoriesMap)
 
-    const hats = Object.values(titles)
+    const mens = Object.values(titles)
 
-    const hatsItems = hats.find(el => el === hats[0])
+    const mensItems = mens.find(el => el === mens[2])
 
     return (
         <div>
@@ -21,11 +19,11 @@ const HatsPage = () => {
                 <ShopNavigation />
             </div>
                 <div className='shop-container'>
-                    <h2>Hats Shop</h2>
+                    <h2>Mens Shop</h2>
                     <div className='products-container'>
                     <Fragment>
                         {
-                            hatsItems && hatsItems.map((items) => (
+                            mensItems && mensItems.map((items) => (
                                 <ProductCard key={items.id} product={items} />
                             ))
                         }
@@ -36,4 +34,4 @@ const HatsPage = () => {
     );
 };
 
-export default HatsPage;
+export default MensPage;

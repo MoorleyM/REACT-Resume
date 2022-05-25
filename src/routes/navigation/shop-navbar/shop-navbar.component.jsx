@@ -48,8 +48,20 @@ const ShopNavigation = () => {
                     href='hats'
                 />
                 <NavItem 
-                    icon='Cart'
-                    href='cart'
+                    icon='Mens'
+                    href='mens'
+                />
+                <NavItem 
+                    icon='Womens'
+                    href='womens'
+                />
+                <NavItem 
+                    icon='Jackets'
+                    href='jackets'
+                />
+                <NavItem 
+                    icon='Sneakers'
+                    href='sneakers'
                 />
             </Navbar>
             {isCartOpen && <CartDropdown />}
