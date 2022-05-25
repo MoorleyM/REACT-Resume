@@ -6,7 +6,7 @@ const ShopDirectory = ({categories}) => {
     return (
         <section className='directory-container'>
             {categories.map((category) => (
-                <CategoryItem key={category.id} category={category} />
+                <CategoryItem key={category.id} category={category} href={category.href}/>
             ))}
         </section>
     )

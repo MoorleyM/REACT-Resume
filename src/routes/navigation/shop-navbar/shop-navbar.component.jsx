@@ -40,28 +40,8 @@ const ShopNavigation = () => {
         <div className='navbar-container' >
             <Navbar>
                 <NavItem 
-                    icon='Index'
+                    icon='Directory'
                     href='shop'
-                />
-                <NavItem 
-                    icon='Hats'
-                    href='hats'
-                />
-                <NavItem 
-                    icon='Mens'
-                    href='mens'
-                />
-                <NavItem 
-                    icon='Womens'
-                    href='womens'
-                />
-                <NavItem 
-                    icon='Jackets'
-                    href='jackets'
-                />
-                <NavItem 
-                    icon='Sneakers'
-                    href='sneakers'
                 />
             </Navbar>
             {isCartOpen && <CartDropdown />}
