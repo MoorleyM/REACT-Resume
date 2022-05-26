@@ -17,7 +17,7 @@ const ShopNavbar = () => {
             <nav className='navbar'>
                 <ul className='navbar-nav'>
                     <li className='nav-item'>
-                        <Link to='shop'>
+                        <Link to='../shop'>
                             Directory
                         </Link>
                     </li>
