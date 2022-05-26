@@ -1,7 +1,7 @@
 import { useContext, Fragment } from 'react'
 
 import { CategoriesContext } from '../../../../components/contexts/categories.context';
-import ShopNavigation from '../../../navigation/shop-navbar/shop-navbar.component';
+import ShopNavbar from '../../../navigation/shop-navbar/shop-navigation.component';
 import ProductCard from '../../../../components/shop/product-card/product-card.component';
 import Footer from '../../../footer/footer.component';
 
@@ -19,7 +19,7 @@ const HatsPage = () => {
     return (
         <div>
             <div>
-                <ShopNavigation />
+                <ShopNavbar />
             </div>
                 <div className='shop-container'>
                     <h2>Hats Shop</h2>

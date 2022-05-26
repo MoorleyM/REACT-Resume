@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 
 import { CartContext } from '../../../../components/contexts/cart.context';
-import ShopNavigation from "../../../navigation/shop-navbar/shop-navbar.component";
+import ShopNavbar from '../../../navigation/shop-navbar/shop-navigation.component';
 import CheckoutItem from '../../../../components/shop/checkout-item/checkout-item.component';
 import Footer from '../../../footer/footer.component';
 
@@ -13,7 +13,7 @@ const CartPage = () => {
     return (
         <div>
             <div className='shop-navbar'>
-                <ShopNavigation />
+                <ShopNavbar />
             </div>
             <div className='checkout-container'>
                 <div className='checkout-header'>
