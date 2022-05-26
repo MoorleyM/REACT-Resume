@@ -1,6 +1,7 @@
 import { Component } from 'react'
 import CardList from '../../../components/monsters-rolodex/card-list/card-list.component';
 import SearchBox from '../../../components/monsters-rolodex/search-box/search-box.component';
+import Footer from '../../footer/footer.component';
 
 import './monsters-rolodex.styles.scss'
 
@@ -55,6 +56,7 @@ class Monsters extends Component {
               placeholder='search monsters'
             />
             <CardList monsters={filteredMonsters} />
+            <Footer />
           </section>
         );
     }

@@ -3,6 +3,7 @@ import { useContext } from 'react';
 import { CartContext } from '../../../../components/contexts/cart.context';
 import ShopNavigation from "../../../navigation/shop-navbar/shop-navbar.component";
 import CheckoutItem from '../../../../components/shop/checkout-item/checkout-item.component';
+import Footer from '../../../footer/footer.component';
 
 import './cart.styles.scss'
 
@@ -37,6 +38,7 @@ const CartPage = () => {
                 ))}
                 <span className='total'>Total: ${cartTotal}</span>
             </div>
+            <Footer />
         </div>
     );
 };

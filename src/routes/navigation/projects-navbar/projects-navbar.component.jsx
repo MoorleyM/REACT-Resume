@@ -5,7 +5,7 @@ import CartDropdown from '../../../components/shop/cart-dropdown/cart-dropdown.c
 
 import { CartContext } from '../../../components/contexts/cart.context';
 
-import './shop-navigation.styles.scss'
+import './projects-navbar-styles.scss'
 
 const Navbar = (props) => {
     return (
@@ -13,7 +13,7 @@ const Navbar = (props) => {
             <div>
                 <ul className='navbar-nav' >{ props.children }</ul>
             </div>
-            <CartIcon />
+            {/* <CartIcon /> */}
         </nav>
     );
 };
@@ -31,7 +31,7 @@ const NavItem = (props) => {
     );
 };
 
-const ShopNavigation = () => {
+const ProjectsNavigation = () => {
     
     const { isCartOpen } = useContext(CartContext)
 
@@ -39,7 +39,11 @@ const ShopNavigation = () => {
         <div className='navbar-container' >
             <Navbar>
                 <NavItem 
-                    icon='Directory'
+                    icon='Monsters Rolodex'
+                    href='monsters-rolodex'
+                />
+                <NavItem 
+                    icon='Shop'
                     href='shop'
                 />
             </Navbar>
@@ -49,4 +53,4 @@ const ShopNavigation = () => {
     );
 };
   
-export default ShopNavigation;
+export default ProjectsNavigation;

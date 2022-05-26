@@ -3,6 +3,7 @@ import { useContext, Fragment } from 'react'
 import { CategoriesContext } from '../../../../components/contexts/categories.context';
 import ShopNavigation from '../../../navigation/shop-navbar/shop-navbar.component';
 import ProductCard from '../../../../components/shop/product-card/product-card.component';
+import Footer from '../../../footer/footer.component';
 
 const WomensPage = () => {
     const { categoriesMap } = useContext(CategoriesContext);
@@ -30,6 +31,7 @@ const WomensPage = () => {
                     </Fragment>
                     </div>
                 </div>
+            <Footer />
         </div>
     );
 };

@@ -1,5 +1,6 @@
 import Directory from '../../../../components/shop/shop-directory/shop-directory.component';
 import ShopNavigation from '../../../navigation/shop-navbar/shop-navbar.component';
+import Footer from '../../../footer/footer.component';
 
 const Shop = () => {
     
@@ -43,7 +44,8 @@ const Shop = () => {
             </div>
             <section>
                 <Directory categories={categories} />
-            </section>     
+            </section>
+            <Footer />     
         </div>
     );
 };
