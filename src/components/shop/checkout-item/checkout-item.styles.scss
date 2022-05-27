@@ -19,7 +19,7 @@
     .name,
     .quantity,
     .price {
-      width: 23%;
+      width: 20%;
     }
   
     .quantity {
@@ -38,5 +38,11 @@
       padding-left: 12px;
       cursor: pointer;
     }
+}
+
+@media screen and (max-width: 960px) { 
+  .checkout-item-container {
+    font-size: 14px;
+  }
 }
   

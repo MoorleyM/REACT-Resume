@@ -82,3 +82,16 @@
         justify-content: center;
     }
 }
+
+@media screen and (max-width: 960px) {
+
+    .home-content-two {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .home-content-two p {
+        width: 80%;
+    }
+
+}

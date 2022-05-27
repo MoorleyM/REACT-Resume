@@ -49,3 +49,8 @@
     }
   }
 }
+@media screen and (max-width: 960px) {
+  .product-card-container {
+    max-width: 400px;
+  }
+}

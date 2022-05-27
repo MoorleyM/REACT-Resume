@@ -29,3 +29,30 @@
       font-size: 36px;
     }
 }
+
+@media screen and (max-width: 960px) {
+
+  .checkout-container {
+    margin-top: 20px;
+    width: 100%;
+
+    .checkout-header {
+      padding: 0px;
+
+      .header-block {
+        width: 25%;
+        font-size: 14px;
+        
+        &:last-child {
+          width: 20%;
+        }
+      }
+    }
+    
+    .total {
+      margin-right: 20px;
+      margin-top: 20px;
+      font-size: 20px;
+    }
+  }
+}

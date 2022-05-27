@@ -1,7 +1,21 @@
+h2 {
+    text-align: center;
+}
+
 .products-container {
     padding: 20px 40px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 10px;
     row-gap: 50px;
+}
+
+@media screen and (max-width: 960px) {
+
+    .products-container {
+        padding: 20px 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
