@@ -4,6 +4,7 @@ import FormInput from '../form-input/form-input.component';
 import ShopButton from '../../shared/buttons/shop-buttons/shop-button.component';
 
 import { 
+    signInWithGooglePopup,
     createAuthUserWithEmailAndPassword,
     createUserDocumentFromAuth,
 } from '../../../utils/firebase/firebase.utils';
@@ -71,6 +72,13 @@ const SignUpForm = () => {
         });
     };
 
+    // Making async call to database
+    const SignInWithGoogle = async () => {
+
+        // Waiting for response
+        await signInWithGooglePopup();
+    };
+
     return (
         <div className='sign-up-container'>
             <h2>Don't have an account?</h2>
@@ -111,7 +119,10 @@ const SignUpForm = () => {
                     name='confirmPassword'
                     value={confirmPassword}
                 />
+                <div className='buttons-container'>
                 <ShopButton type='submit'>Sign Up</ShopButton>
+                <ShopButton type='button' buttonType='google' onClick={SignInWithGoogle}>Google Sign Up</ShopButton>
+                </div>
             </form>
         </div>
     );

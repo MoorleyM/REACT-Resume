@@ -7,3 +7,9 @@
         margin: 10px 0;
     }
 }
+
+@media screen and (max-width: 960px) {
+    .sign-up-container:last-child {
+        margin-top: 40px;
+    }
+}
